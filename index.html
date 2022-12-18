@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Simple Interest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+  <br>
+  <h1>Simple Interest</h1>
+  <span>
+    <input id="inputP" type="number" style="width: 20%" class="inputComp" placeholder="Principal">
+    <input id="inputR" type="number" class="inputComp" placeholder="Rate">
+    <input id="inputT" type="number" style="width: 25%" class="inputComp" placeholder="Time (Years)">
+  </span>
+  <br><br>
+  <button id="calculateBtn" onclick="calculateInterest()">Calculate</button>
+  <br><br>
+  <div id="outputLbl">
+      <div style="width: fit-content;">
+        <h2><span id="principal-formula">P</span> × <span id="rate">R</span> × <span id="time">T</span></h2>
+        <hr style="border: 2px black solid;">
+        <h2>100</h2>
+      </div>
+      <hr style="border: 3px black double;">
+      <h2><span style="text-decoration: underline;">Interest</span> = <span style="color: red;">₹<span id="interest">---</span></span></h2>
+      <hr style="border: 3px black double;">
+      <h2><span style="text-decoration: underline;">Amount</span> = <span id="principal-amount">P</span> + <span><span id="interest-amount">SI</span></span> = <span style="color: red;">₹<span id="amount">---</span></h2>
+  </div>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
